@@ -8,7 +8,7 @@ const http = require('http');
 const server = http.createServer(httpHandler);
 
 
-const port = 8080;
+const port = 3000;
 const ip = '127.0.0.1';
 server.listen(port, ip);
 

@@ -1,6 +1,6 @@
 
 var repeatlyGet = function(){ 
-  $.get('http://127.0.0.1:8080')
+  $.get('http://127.0.0.1:3000')
   .done((data) => {
     SwimTeam.move(data);
     setTimeout(repeatlyGet(), 3000);
@@ -12,6 +12,8 @@ var repeatlyGet = function(){
   //   setTimeout(repeatlyGet(), 300);
   // });   
 }
+
+
 
 repeatlyGet();
 
